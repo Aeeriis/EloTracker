@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elo-tracker"
+version = "0.1.0"
+description = "Command-line tracker for Pokémon GO Battle League Elo progression"
+readme = "README.md"
+authors = [{ name = "EloTracker Contributors" }]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+elo-tracker = "elo_tracker.cli:main"
